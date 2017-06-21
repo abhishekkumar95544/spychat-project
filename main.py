@@ -79,11 +79,11 @@ def select_a_friend():
                                                    friend.age,
                                                    friend.rating)
         item_number = item_number + 1
-
+#choice of friend
     friend_choice = raw_input("Choose from your friends")
 
     friend_choice_position = int(friend_choice) - 1
-
+#returm friend choice
     return friend_choice_position
 
 
