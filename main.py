@@ -86,7 +86,7 @@ def select_a_friend():
 #returm friend choice
     return friend_choice_position
 
-
+#sending the message
 def send_message():
 
     friend_choice = select_a_friend()
@@ -99,7 +99,7 @@ def send_message():
     new_chat = ChatMessage(text,True)
 
     friends[friend_choice].chats.append(new_chat)
-
+#printingthe scret messgage
     print "Your secret message image is ready!"
 
 
