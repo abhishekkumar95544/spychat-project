@@ -13,6 +13,7 @@ def add_status():
     if spy.current_status_message != None:
         print 'Your current status message is %s \n' % (spy.current_status_message)
     else:
+        #Printing that you don't have any status message
         print 'You don\'t have any status message currently \n'
     default = raw_input("Do you want to select from the older status (y/n)? ")
     if default.upper() == "N":
@@ -20,6 +21,7 @@ def add_status():
         new_status_message = raw_input("What status message do you want to set? ")
         if len(new_status_message) > 0:
             STATUS_MESSAGES.append(new_status_message)
+            #updating the new status message
             updated_status_message = new_status_message
 
     elif default.upper() == 'Y':
