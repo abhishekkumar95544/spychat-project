@@ -59,10 +59,10 @@ def add_friend():
     new_friend.salutation = raw_input("Are they Mr. or Ms.?: ")
 #new friend name
     new_friend.name = new_friend.salutation + " " + new_friend.name
-
+#new friend age
     new_friend.age = raw_input("Age?")
     new_friend.age = int(new_friend.age)
-
+#new friend rating
     new_friend.rating = raw_input("Spy rating?")
     new_friend.rating = float(new_friend.rating)
 
