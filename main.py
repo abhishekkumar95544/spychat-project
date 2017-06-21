@@ -102,11 +102,11 @@ def send_message():
 #printingthe scret messgage
     print "Your secret message image is ready!"
 
-
+#reading  the message
 def read_message():
 
     sender = select_a_friend()
-
+#outputing the path
     output_path = raw_input("What is the name of the file?")
 
     secret_text = Steganography.decode(output_path)
