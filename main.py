@@ -117,7 +117,7 @@ def read_message():
 
     print "Your secret message has been saved!"
 
-
+#reading the chat history
 def read_chat_history():
 
     read_for = select_a_friend()
@@ -135,10 +135,10 @@ def start_chat(spy):
 
     spy.name = spy.salutation + " " + spy.name
 
-
+#spying the age
     if spy.age > 12 and spy.age < 50:
 
-
+#authentication completing
         print "Authentication complete. Welcome " + spy.name + " age: " \
               + str(spy.age) + " and rating of: " + str(spy.rating) + " Proud to have you onboard"
 
@@ -170,7 +170,7 @@ def start_chat(spy):
 if existing == "Y":
     start_chat(spy)
 else:
-
+#spying the chats
     spy = Spy('','',0,0.0)
 #name of the spy
     spy.name = raw_input("Welcome to spy chat, you must tell me your spy name first: ")
