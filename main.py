@@ -1,9 +1,10 @@
 from spy_details import spy, Spy, ChatMessage, friends
+from termcolor import colored
 from steganography.steganography import Steganography
 
 STATUS_MESSAGES = ['My name is Kumar, Abhishek Kumar', 'Seen, whole completed.', 'Working on secret task , Sir']
 #describing the details
-print "Hello! Let\'s get started"
+print "Hello! Let\'s get started the new application","orange"
 #Giving detais about spy
 question = "Do you want to continue as " + spy.salutation + " " + spy.name + " (Y/N)? "
 existing = raw_input(question)
@@ -92,12 +93,12 @@ def select_a_friend():
 def send_message():
 
     friend_choice = select_a_friend()
-
+#providing the image deatails
     original_image = raw_input("What is the name of the image?")
     output_path = "output.jpg"
     text = raw_input("What do you want to say? ")
     Steganography.encode(original_image, output_path, text)
-
+#describing the new chat message
     new_chat = ChatMessage(text,True)
 
     friends[friend_choice].chats.append(new_chat)
