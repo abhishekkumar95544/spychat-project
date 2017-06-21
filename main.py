@@ -183,8 +183,9 @@ else:
 #rating of the spy
         spy.rating = raw_input("What is your spy rating?")
         spy.rating = float(spy.rating)
-
+#start chatting the boy
         start_chat(spy)
     else:
+        #adding the valid spy name
         print 'Please add a valid spy name'
 
