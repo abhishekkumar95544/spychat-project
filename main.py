@@ -43,7 +43,7 @@ def add_status():
         print 'Your updated status message is: %s' % (updated_status_message)
     else:
         print 'You current don\'t have a status update'
-
+#Return update message
     return updated_status_message
 
 
