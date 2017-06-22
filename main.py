@@ -9,6 +9,7 @@ print "Hello! Let\'s get started the new application","orange"
 question = "Do you want to continue as " + spy.salutation + " " + spy.name + " (Y/N)? "
 existing = raw_input(question)
 ##################################################################################################################
+                       #defing add status
 ##################################################################################################################
 def add_status():
     #updating the status
@@ -52,6 +53,7 @@ def add_status():
     return updated_status_message
 
 ##############################################################################################################
+                    #defing add friend
 ##############################################################################################################
 def add_friend():
 #details of new friend
@@ -95,6 +97,7 @@ def select_a_friend():
 #sending the message
 def send_message():
 ############################################################################################################
+                                  #defing the send message
 ############################################################################################################
     friend_choice = select_a_friend()
 #providing the image deatails
@@ -127,6 +130,7 @@ def read_message():
 #reading the chat history
 def read_chat_history():
 ##############################################################################################################
+                             #defing read chat history
 ##############################################################################################################
     read_for = select_a_friend()
 
