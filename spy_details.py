@@ -19,7 +19,7 @@ class ChatMessage:
         self.message = message
         self.time = datetime.now()
         self.sent_by_me = sent_by_me
-
+#spy friends details
 spy = Spy('kumar', 'Mr.', 24, 4.7)
 
 friend_one = Spy('Rakesh', 'Mr.', 2.9, 28)
