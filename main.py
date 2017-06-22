@@ -8,6 +8,8 @@ print "Hello! Let\'s get started the new application","orange"
 #Giving detais about spy
 question = "Do you want to continue as " + spy.salutation + " " + spy.name + " (Y/N)? "
 existing = raw_input(question)
+##################################################################################################################
+##################################################################################################################
 def add_status():
     #updating the status
     updated_status_message = None
@@ -49,7 +51,7 @@ def add_status():
 #Return update message
     return updated_status_message
 
-
+######################################################################################################################
 def add_friend():
 #details of new friend
     new_friend = Spy('','',0,0.0)
@@ -91,7 +93,7 @@ def select_a_friend():
 
 #sending the message
 def send_message():
-
+###################################################################################################################
     friend_choice = select_a_friend()
 #providing the image deatails
     original_image = raw_input("What is the name of the image?")
@@ -122,7 +124,7 @@ def read_message():
 
 #reading the chat history
 def read_chat_history():
-
+###################################################################################################################
     read_for = select_a_friend()
 
     print '\n6'
