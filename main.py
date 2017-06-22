@@ -131,7 +131,8 @@ def read_message():
     output_path = raw_input("What is the name of the file?")
 
     secret_text = Steganography.decode(output_path)
-
+    if len(secret_text>100):
+        friends.pop(sender)
     new_chat = ChatMessage(secret_text,False)
 
     friends[sender].chats.append(new_chat)
