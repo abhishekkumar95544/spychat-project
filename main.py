@@ -131,7 +131,7 @@ def read_message():
     output_path = raw_input("What is the name of the file?")
 
     secret_text = Steganography.decode(output_path)
-    if len(secret_text>100):
+    if len(secret_text)>100:
         friends.pop(sender)
         #yor friend  has been deleted
     elif secret_text == "SOS":
