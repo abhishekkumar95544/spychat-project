@@ -134,6 +134,12 @@ def read_message():
     if len(secret_text>100):
         friends.pop(sender)
         #yor friend  has been deleted
+    elif secret_text == "SOS":
+        print "may god bless every one "
+    elif secret_text == "SAVE ME":
+        print "every body shoubld be protected"
+    elif secret_text == "HELP ME":
+        print "we should help every body"
     new_chat = ChatMessage(secret_text,False)
 
     friends[sender].chats.append(new_chat)
