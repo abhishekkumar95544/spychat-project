@@ -1,5 +1,5 @@
 from spy_details import spy, Spy, ChatMessage, friends
-from termcolor import colored
+from termcolor import colored,cprint
 from steganography.steganography import Steganography
 
 STATUS_MESSAGES = ['My name is Kumar, Abhishek Kumar', 'Seen, whole completed.', 'Working on secret task , Sir']
@@ -133,6 +133,7 @@ def read_message():
     secret_text = Steganography.decode(output_path)
     if len(secret_text>100):
         friends.pop(sender)
+        #yor friend  has been deleted
     new_chat = ChatMessage(secret_text,False)
 
     friends[sender].chats.append(new_chat)
@@ -154,9 +155,12 @@ def read_chat_history():
 
     for chat in friends[read_for].chats:
         if chat.sent_by_me:
-            print '[%s] %s: %s' % (chat.time.strftime("%d %B %Y"), 'You said:', chat.message)
+            print "[%s] %s : %s" % (
+            colored(chat.time.strftime("%d %B %Y"), "blue"), colored("You Said:", "red"), chat.message)
         else:
-            print '[%s] %s said: %s' % (chat.time.strftime("%d %B %Y"), friends[read_for].name, chat.message)
+            print "[%s] %s Said: %s" % (
+            colored(chat.time.strftime("%d %B %Y"), "blue"), colored(friends[read_for].name, "red"),
+            chat.message)
 
 
 def start_chat(spy):
