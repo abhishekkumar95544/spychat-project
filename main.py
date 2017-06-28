@@ -137,7 +137,7 @@ def read_message():
     elif secret_text == "SOS":
         print "may god bless every one "
     elif secret_text == "SAVE ME":
-        print "every body shoubld be protected"
+        print "every body should be protected"
     elif secret_text == "HELP ME":
         print "we should help every body"
     new_chat = ChatMessage(secret_text,False)
